@@ -1,0 +1,153 @@
+@import './colors';
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	font-size: 62.5%;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+	color: $dark;
+}
+
+.bg-image {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url('/img/bg-mini.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter: blur(50px);
+}
+
+
+.form {
+	position: relative;
+	width: 280px;
+	height: 500px;
+	background-color: $light-white;
+	border-radius: 2em;
+	overflow: hidden;
+
+	&__title {
+		margin: 4em 1em 2em 1em;
+		display: flex;
+		justify-content: center;
+		font-size: 1.8rem;
+
+		&-section {
+			margin: 1em 2em;
+			text-align: center;
+			font-size: 1.4rem;
+		}
+	}
+
+	&__box {
+		padding: 1em 2em;
+	}
+
+	&__label {
+		font-size: 2rem;
+	}
+
+	&__input {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&_item {
+			padding: 1em 2em;
+			border: none;
+			border-radius: 2em;
+			box-shadow: 2px 3px 0 0 rgba(255, 255, 255, 0.8), inset 11px 6px 10px rgba(0, 0, 0, 0.2);
+		}
+	}
+
+	&__checkbox {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-row-gap: 1.4em;
+
+		&-item {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&-marker {
+			position: absolute;
+			margin-right: 3em;
+		}
+
+		&-text {
+			margin-right: -3em;
+		}
+	}
+
+	&__btns {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__btn {
+		cursor: pointer;
+		border: none;
+		color: $light-white;
+		border-radius: 2em;
+		margin: 1.5em 0;
+		padding: .5em 2em;
+		font-size: 2rem;
+		background-color: $dark;
+		
+	}
+}
+
+
+@media (min-width: 768px) {
+	.form {
+		width: 600px;
+		height: 700px;
+
+		&__title {
+			font-size: 2.8rem;
+		}
+
+		&__title-section {
+			font-size: 2.4rem;
+		}
+		&__checkbox {
+			
+			&-text {
+				font-size: 2.2rem;
+				margin-right: -50px;
+			}
+
+			&-marker {
+				margin-right: 80px;
+			}
+
+			
+		}
+
+		&__btn {
+			padding: 1em 4em;
+			
+		}
+		
+		&__input {
+			&_item {
+				padding: 1em 3em;
+			}
+		}
+	}
+}

@@ -1,0 +1,83 @@
+<!--
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Yax | Software House Frontend Task - HTML
+
+	W tym pliku znajduje się struktura strony z formularzem. Twoim zadaniem jest stworzenie oraz upiększenie
+	formularza. Przeanalizuj poniższy kod. Jego znajomość będzie potrzebna do przerobienia
+	pliku form.css odpowiedzialnego za styl strony. Gdy zapoznasz się ze strukturą strony,
+	przejdź do pliku css/form.css lub js/validation.js po dalsze instrukcje.
+
+    Powodzenia!
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Yax | Software House Frontend Task</title>
+		<link rel="stylesheet" type="text/css" href="css/form.css" />
+		<meta
+		name="viewport"
+		charset="utf-8"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
+		/>
+	</head>
+	<body>
+		<div class="bg-image"></div>
+		
+		<section id="task-frontend">
+			<div class="form">
+				<h2 class="form__title">Formularz rekrutacyjny</h2>
+				
+				<div class="form__box">
+					<div class="form__input">
+						<input class="form__input_item" id="first-name" type="text" placeholder="Imie" />
+					</div>
+				</div>
+
+				<div class="form__box">
+					<div class="form__input">
+						<input class="form__input_item" id="last-name" type="text" placeholder="Nazwisko" />
+					</div>
+				</div>
+				
+				<div class="form__box">
+					<div class="form__input">
+						<input class="form__input_item" type="text" id="email" placeholder="e-mail" />
+					</div>
+				</div>
+
+				<p class="form__title-section">Sekcje, które Cię interesują:</p>
+
+				<div class="form__checkbox">
+					<div class="form__checkbox-item">
+						<input class="form__checkbox-marker" type="checkbox" name="frontend" checked />
+						<label class="form__checkbox-text" for="frontend">frontend</label>
+					</div>
+
+					<div class="form__checkbox-item">
+						<input class="form__checkbox-marker" type="checkbox" name="backend" />
+						<label class="form__checkbox-text" for="backend">backend</label>
+					</div>
+
+					<div class="form__checkbox-item">
+						<input class="form__checkbox-marker" type="checkbox" name="mobile" />
+						<label class="form__checkbox-text" for="mobile">mobile</label>
+					</div>
+
+					<div class="form__checkbox-item">
+						<input class="form__checkbox-marker" type="checkbox" name="grafika" />
+						<label class="form__checkbox-text" for="grafika">grafika</label>
+					</div>
+
+				</div>
+
+				<div class="form__btns">
+					<div class="form__btn">Wyślij</div>
+				</div>
+			</div>
+		
+		
+		<script type="text/javascript" src="js/validation.js"></script>
+	</body>
+</html>
